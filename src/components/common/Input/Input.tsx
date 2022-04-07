@@ -9,12 +9,10 @@ interface InputProps {
 }
 
 const Input = ({ value, onChange, placeholder, type = 'text', block = false }: InputProps) => {
-  const classes = `${
-    block ? 'w-full' : 'w-auto max-w-[320px]'
-  } p-3 text-gray-900 border border-gray-300 rounded-md focus:border-gray-600`;
+  const classes = `input__elem input__elem--${block ? 'block' : 'normal'}`;
 
   return (
-    <div className="flex flex-col my-2">
+    <div className="input">
       {type !== 'textarea' ? (
         <input className={classes} placeholder={placeholder} type={type} value={value} onChange={onChange} />
       ) : (

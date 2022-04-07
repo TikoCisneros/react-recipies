@@ -1,0 +1,15 @@
+.input {
+  @apply flex flex-col my-2;
+}
+
+.input__elem {
+  @apply p-3 text-gray-900 border border-gray-300 rounded-md focus:border-gray-600;
+}
+
+.input__elem--normal {
+  @apply w-auto max-w-[320px];
+}
+
+.input__elem--block {
+  @apply w-full;
+}
