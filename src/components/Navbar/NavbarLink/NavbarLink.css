@@ -1,0 +1,7 @@
+.nav-link {
+  @apply md:p-4 py-2 block hover:text-slate-400;
+}
+
+.nav-link--selected {
+  @apply text-slate-500;
+}

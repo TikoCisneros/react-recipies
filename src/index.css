@@ -3,5 +3,7 @@
 @tailwind components;
 @import './components/common/Button/Button.css';
 @import './components/common/Input/Input.css';
+@import './components/Navbar/Navbar.css';
+@import './components/Navbar/NavbarLink/NavbarLink.css';
 
 @tailwind utilities;
