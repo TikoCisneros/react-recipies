@@ -5,5 +5,6 @@
 @import './components/common/Input/Input.css';
 @import './components/Navbar/Navbar.css';
 @import './components/Navbar/NavbarLink/NavbarLink.css';
+@import './components/common/Card/Card.css';
 
 @tailwind utilities;
