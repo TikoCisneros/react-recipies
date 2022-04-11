@@ -19,20 +19,20 @@ export const WithBody = () => (
   </Card>
 );
 
-export const cardData = {
+export const FAKE_CARD_DATA = {
   src: 'https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   alt: 'Flower and sky'
 }
 
 export const WithImage = () => (
   <Card>
-    <Card.CardImage {...cardData} />
+    <Card.CardImage {...FAKE_CARD_DATA} />
   </Card>
 );
 
 export const WithImageAndBody = () => (
   <Card>
-    <Card.CardImage {...cardData} />
+    <Card.CardImage {...FAKE_CARD_DATA} />
     <Card.CardBody>
       <strong>I'm a strong</strong>
     </Card.CardBody>

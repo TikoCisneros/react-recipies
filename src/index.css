@@ -6,5 +6,6 @@
 @import './components/Navbar/Navbar.css';
 @import './components/Navbar/NavbarLink/NavbarLink.css';
 @import './components/common/Card/Card.css';
+@import './components/ProductCard/ProductCard.css';
 
 @tailwind utilities;
