@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CardContext, { INITIAL_VALUE, useCardContext } from './CardContext';
 interface CardProps {
   children?: React.ReactNode;
   className?: string;
@@ -11,23 +11,42 @@ interface CardImageProps {
   className?: string;
 }
 
-const CardImage = ({ src, alt, className }: CardImageProps) => (
-  <img
-    className={`card__image ${className ?? ''}`}
-    src={src}
-    alt={alt}
-  />
-);
+const CardImage = ({ src, alt, className }: CardImageProps) => {
+  useCardContext();
 
-const CardBody = ({ children, className }: CardProps) => (
-  <div className={`card__body ${className ?? ''}`}>{children}</div>
-);
+  return (
+    <img
+      className={`card__image ${className ?? ''}`}
+      src={src}
+      alt={alt}
+    />
+  )
+};
+
+const CardBody = ({ children, className }: CardProps) => {
+  useCardContext();
+
+  return (
+    <div className={`card__body ${className ?? ''}`}>{children}</div>
+  );
+};
+
+const CardActions = ({ children, className }: CardProps) => {
+  useCardContext();
+
+  return (
+    <div className={`card__actions ${className ?? ''}`}>{children}</div>
+  );
+};
 
 const Card = ({ children, className }: CardProps) => (
-  <div className={`card ${className ?? ''}`}>{children}</div>
+  <CardContext.Provider value={INITIAL_VALUE}>
+    <div className={`card ${className ?? ''}`}>{children}</div>
+  </CardContext.Provider>
 );
 
-Card.CardBody = CardBody;
-Card.CardImage = CardImage;
+Card.Body = CardBody;
+Card.Image = CardImage;
+Card.Actions = CardActions;
 
 export default Card;

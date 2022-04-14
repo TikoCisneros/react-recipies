@@ -11,5 +11,5 @@
 }
 
 .product-card__body h2 {
-  @apply font-semibold mt-3 mb-5 cursor-pointer text-slate-700 hover:text-slate-500;
+  @apply font-semibold mt-1 mb-5 cursor-pointer text-slate-700 hover:text-slate-500;
 }

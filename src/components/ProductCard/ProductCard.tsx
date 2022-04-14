@@ -10,11 +10,11 @@ const ProductCard = ({ data }: Props) => {
 
   return (
     <Card className="product-card">
-      <Card.CardImage className="product-card__image" src={image} alt={`product-${id}`} />
-      <Card.CardBody className="product-card__body">
+      <Card.Image className="product-card__image" src={image} alt={`product-${id}`} />
+      <Card.Body className="product-card__body">
         <h2>{title}</h2>
         <span>{`$ ${price}`}</span>
-      </Card.CardBody>
+      </Card.Body>
     </Card>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { FAKE_PRODUCT } from './ProductCard.stories';
+import { FAKE_PRODUCT } from './constants';
 import ProductCard from './ProductCard'; 
 
 describe('ProductCard tests', () => {
