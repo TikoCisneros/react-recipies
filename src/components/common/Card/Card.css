@@ -7,9 +7,9 @@
 }
 
 .card__body {
-  @apply py-4 px-5;
+  @apply p-5;
 }
 
 .card__actions {
-  @apply p-4 flex justify-between;
+  @apply flex justify-between items-center px-5 pb-3;
 }
