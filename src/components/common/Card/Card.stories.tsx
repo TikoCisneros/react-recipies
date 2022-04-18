@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta } from '@storybook/react';
 
-import Card from './Card';
+import Card from './index';
 import { FAKE_CARD_DATA } from './constants';
 
 export default {
