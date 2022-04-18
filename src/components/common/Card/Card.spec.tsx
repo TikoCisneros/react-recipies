@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { FAKE_CARD_DATA } from './constants';
+import { FAKE_CARD_DATA } from './util/constants';
 import Card from './index'; 
 
 describe('Card tests', () => {
