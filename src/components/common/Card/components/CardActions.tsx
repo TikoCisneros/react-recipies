@@ -1,5 +1,5 @@
-import { useCardContext } from './CardContext';
-import { CardProps } from './interfaces';
+import { useCardContext } from '../context/CardContext';
+import { CardProps } from '../interfaces';
 
 const CardActions = ({ children, className }: CardProps) => {
   useCardContext();

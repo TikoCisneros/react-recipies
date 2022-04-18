@@ -1,4 +1,4 @@
-import CardContext, { INITIAL_VALUE } from './CardContext';
+import CardContext, { INITIAL_VALUE } from './context/CardContext';
 import { CardProps } from './interfaces';
 
 const Card = ({ children, className }: CardProps) => (

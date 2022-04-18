@@ -1,6 +1,5 @@
-import { useCardContext } from './CardContext';
-
-import { CardImageProps } from './interfaces';
+import { useCardContext } from '../context/CardContext';
+import { CardImageProps } from '../interfaces';
 
 const CardImage = ({ src, alt, className }: CardImageProps) => {
   useCardContext();

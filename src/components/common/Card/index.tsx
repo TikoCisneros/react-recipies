@@ -1,8 +1,8 @@
 import CardHOC from './Card';
 
-import CardActions from './CardActions';
-import CardBody from './CardBody';
-import CardImage from './CardImage';
+import CardActions from './components/CardActions';
+import CardBody from './components/CardBody';
+import CardImage from './components/CardImage';
 
 import { CardHOCProps } from './interfaces';
 
