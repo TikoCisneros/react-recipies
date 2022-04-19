@@ -1,0 +1,23 @@
+.input-number {
+  @apply flex flex-row h-10 w-32 rounded-lg relative bg-transparent mt-1;
+}
+
+.input-number__display {
+  @apply w-full bg-white font-semibold text-center text-xl hover:text-black focus:text-black text-gray-600;
+}
+
+.input-number__action {
+  @apply bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-24 cursor-pointer;
+}
+
+.input-number__action span {
+  @apply m-auto text-2xl font-thin;
+}
+
+.input-number__action--left {
+  @apply rounded-l;
+}
+
+.input-number__action--right {
+  @apply rounded-r;
+}
