@@ -10,7 +10,6 @@ const InputNumber = ({ onChange }: InputNumberProps) => {
   return (
     <div className="input-number">
       <button
-        type="button"
         className="input-number__action input-number__action--left"
         data-testid="decrease"
         onClick={increaseBy(-1)}
@@ -19,7 +18,6 @@ const InputNumber = ({ onChange }: InputNumberProps) => {
       </button>
       <input type="text" className="input-number__display" value={counter} data-testid="display" disabled />
       <button
-        type="button"
         className="input-number__action input-number__action--right"
         data-testid="increase"
         onClick={increaseBy(1)}
