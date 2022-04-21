@@ -20,6 +20,6 @@ describe('InputNumber tests', () => {
     const decreaseBtn = screen.getByTestId<HTMLButtonElement>('decrease');
     fireEvent.click(decreaseBtn);
     expect(input.value).toBe('1');
-    expect(myFn).toHaveBeenCalledTimes(4);
+    expect(myFn).toHaveBeenCalledTimes(3);
   });
 });

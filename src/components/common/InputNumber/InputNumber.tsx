@@ -5,7 +5,7 @@ interface InputNumberProps {
 }
 
 const InputNumber = ({ onChange }: InputNumberProps) => {
-  const { counter, increaseBy } = useIncrement(onChange);
+  const { counter, increaseBy } = useIncrement({ onIncreaseChange: onChange });
 
   return (
     <div className="input-number">

@@ -1,15 +1,29 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-export const useIncrement = (onIncreaseChange?: (value: number) => void, min = 0) => {
+const MAX_DEFAULT_VALUE = 999999999;
+const MIN_DEFAULT_VALUE = 0;
+
+interface UseIncrementParams {
+  min?: number;
+  max?: number;
+  onIncreaseChange?: (value: number) => void;
+}
+
+export const useIncrement = ({
+  min = MIN_DEFAULT_VALUE,
+  max = MAX_DEFAULT_VALUE,
+  onIncreaseChange,
+}: UseIncrementParams = {}) => {
   const [counter, setCounter] = useState(min);
 
-  const increaseBy = (value: number) => () => setCounter((prev) => Math.max(prev + value, 0));
+  const increaseBy = (value: number) => () => {
+    const nextValue = counter + value;
 
-  useEffect(() => {
-    if (onIncreaseChange) {
-      onIncreaseChange(counter);
+    if (nextValue >= min && nextValue <= max) {
+      setCounter(nextValue);
+      onIncreaseChange?.(nextValue);
     }
-  }, [counter])
+  };
 
   return {
     counter,
