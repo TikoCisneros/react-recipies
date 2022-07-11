@@ -1,0 +1,1 @@
+.astronaut{-webkit-animation:spin 50s linear infinite;animation:spin 50s linear infinite}@-webkit-keyframes spin{to{-webkit-transform:rotate(1turn)}}@keyframes spin{to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
